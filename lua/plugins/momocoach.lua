@@ -1,3 +1,1 @@
-return {
-  { dir='~/code/momocoach.lua', name='momocoach' },
-}
+return { 'momocoach/momocoach.lua', name = 'momocoach' }
