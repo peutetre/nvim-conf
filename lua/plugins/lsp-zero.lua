@@ -95,7 +95,6 @@ return{
 
     cmp.setup({
       sources = {
-        {name = 'copilot', keyword_length = 2},
         {name = 'path'},
         {name = 'nvim_lsp'},
         {name = 'buffer', keyword_length = 3},
@@ -114,8 +113,6 @@ return{
       sorting = {
         priority_weight = 2,
         comparators = {
-          require("copilot_cmp.comparators").prioritize,
-
           -- Below is the default comparitor list and order for nvim-cmp
           cmp.config.compare.offset,
           -- cmp.config.compare.scopes, --this is commented in nvim-cmp too
